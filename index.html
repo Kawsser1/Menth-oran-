@@ -8,7 +8,7 @@
             text-align: center;
             padding: 0;
             margin: 0;
-            background: #F0F8FF; /* Fond clair */
+            background: #F0F8FF; /* Fond clair et doux */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,40 +21,44 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 3em;
-            color: #228B22; /* Vert deep */
+            font-size: 4em;
+            color: #228B22; /* Vert forêt */
             margin-bottom: 20px;
         }
-        .circle {
-            width: 200px;
-            height: 200px;
-            background: #50C878; /* Vert d'eau */
-            border-radius: 50%;
-            margin: 0 auto;
+        .social-links {
             display: flex;
             justify-content: center;
-            align-items: center;
-            box-shadow: 0 10px 20px rgba(80, 200, 120, 0.3);
-        }
-        .icons {
-            display: flex;
             gap: 20px;
         }
-        .icons a {
-            text-decoration: none;
-            color: white;
-            transition: transform 0.3s ease;
+        .social-link {
+            display: inline-block;
+            padding: 15px;
+            background: #50C878; /* Vert d'eau */
+            border-radius: 50%;
+            transition: transform 0.3s ease, background 0.3s ease;
         }
-        .icons a:hover {
+        .social-link:hover {
             transform: scale(1.1);
+            background: #228B22; /* Vert forêt au survol */
         }
-        .icons img {
-            width: 50px;
-            height: 50px;
+        .social-link img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>MenThé</h1>
-        <div class="
+        <div class="social-links">
+            <a href="https://www.instagram.com/menthe.oran" class="social-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/share/1XqPCaE3T7/" class="social-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
