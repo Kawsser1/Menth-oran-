@@ -1,64 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>MenThé - Mes Réseaux Sociaux</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenThé - Social Media</title>
     <style>
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 0;
             margin: 0;
-            background: #F0F8FF; /* Fond clair et doux */
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #228B22; /* Forest Green */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #50C878; /* Light Green */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600/228B22/FFFFFF?text=MenThé') no-repeat center center/cover;
+            height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            color: white;
+            text-align: center;
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
+
+        .hero h1 {
             font-size: 4em;
-            color: #228B22; /* Vert forêt */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Social Media Section */
+        .social-media {
+            padding: 50px 20px;
+            text-align: center;
+            background: #F0F8FF; /* Light Background */
+        }
+
+        .social-media h2 {
+            font-size: 2.5em;
+            color: #228B22; /* Forest Green */
             margin-bottom: 20px;
         }
-        .social-links {
+
+        .social-icons {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
         }
-        .social-link {
-            display: inline-block;
-            padding: 15px;
-            background: #50C878; /* Vert d'eau */
-            border-radius: 50%;
-            transition: transform 0.3s ease, background 0.3s ease;
+
+        .social-icons a {
+            text-decoration: none;
+            color: #228B22; /* Forest Green */
+            transition: transform 0.3s ease, color 0.3s ease;
         }
-        .social-link:hover {
-            transform: scale(1.1);
-            background: #228B22; /* Vert forêt au survol */
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #50C878; /* Light Green */
         }
-        .social-link img {
-            width: 40px;
-            height: 40px;
-            vertical-align: middle;
+
+        .social-icons img {
+            width: 50px;
+            height: 50px;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>MenThé</h1>
-        <div class="social-links">
-            <a href="https://www.instagram.com/menthe.oran" class="social-link">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/share/1XqPCaE3T7/" class="social-link">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+
+        /* Footer */
+        footer {
+            background: #228B22; /* Forest Green */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p
